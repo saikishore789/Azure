@@ -69,3 +69,101 @@ A company with services in India and Europe uses Traffic Manager to:
 ---
 
 
+
+## 🧭 Overview Comparison
+
+| Feature                  | Azure Load Balancer | Application Gateway | Azure Front Door | Traffic Manager |
+|--------------------------|---------------------|---------------------|------------------|-----------------|
+| **Layer**                | L4 (Transport)      | L7 (Application)    | L7 (Global HTTP) | DNS (Routing)   |
+| **Scope**                | Regional            | Regional            | Global           | Global          |
+| **Protocol Support**     | TCP/UDP             | HTTP/HTTPS          | HTTP/HTTPS       | DNS             |
+| **SSL Termination**      | ❌                  | ✅                  | ✅               | ❌              |
+| **URL Path Routing**     | ❌                  | ✅                  | ✅               | ❌              |
+| **Web Application Firewall (WAF)** | ❌        | ✅                  | ✅               | ❌              |
+| **Global Failover**      | ❌                  | ❌                  | ✅               | ✅              |
+| **Caching/CDN**          | ❌                  | ❌                  | ✅               | ❌              |
+
+---
+
+## 📊 Visual Diagrams
+
+### 1. **Azure Load Balancer**
+Distributes TCP/UDP traffic across VMs in a region.
+
+```
+[Client]
+   |
+   v
+[Azure Load Balancer]
+   |       |       |
+[VM1]   [VM2]   [VM3]
+```
+
+- **Use Case**: Backend services, game servers, internal apps
+- **Example**: Load balancing traffic to multiple VMs hosting a REST API
+
+---
+
+### 2. **Application Gateway**
+Smart HTTP/HTTPS routing with WAF and SSL termination.
+
+```
+[Client]
+   |
+   v
+[Application Gateway]
+   |--(URL: /login)--> [Login Service]
+   |--(URL: /shop) --> [Shopping Service]
+```
+
+- **Use Case**: Web apps needing path-based routing and security
+- **Example**: E-commerce site routing `/checkout` to one backend and `/products` to another
+
+---
+
+### 3. **Azure Front Door**
+Global entry point with CDN, SSL, and smart routing.
+
+```
+[Client - US]     [Client - India]
+     |                  |
+     v                  v
+[Azure Front Door - Global]
+     |                  |
+     v                  v
+[US Web App]        [India Web App]
+```
+
+- **Use Case**: Global websites with performance and failover needs
+- **Example**: SaaS platform serving users worldwide with caching and geo-routing
+
+---
+
+### 4. **Traffic Manager**
+DNS-based routing to endpoints based on rules.
+
+```
+[Client]
+   |
+   v
+[Traffic Manager]
+   |--(Fastest)--> [East US App]
+   |--(Failover)--> [West Europe App]
+```
+
+- **Use Case**: Multi-region apps with DNS-level control
+- **Example**: Route users to nearest datacenter or failover if one region is down
+
+---
+
+## 🧠 Which One Should You Use?
+
+- **Azure Load Balancer**: For raw TCP/UDP traffic across VMs or containers
+- **Application Gateway**: For smart HTTP routing, SSL offload, and WAF
+- **Azure Front Door**: For global apps needing performance, CDN, and failover
+- **Traffic Manager**: For DNS-based routing across regions or cloud providers
+
+---
+
+Would you like help designing a real-world architecture using one or more of these? I can sketch out a solution tailored to your app or business.
+
