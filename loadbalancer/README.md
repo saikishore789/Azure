@@ -68,4 +68,4 @@ A company with services in India and Europe uses Traffic Manager to:
 
 ---
 
-Would you like help choosing the best load balancer for your specific app or architecture?
+
