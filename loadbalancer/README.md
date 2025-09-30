@@ -61,13 +61,12 @@ A SaaS company uses Azure Front Door to:
 - Accelerate performance with caching
 
 ### 🧭 DNS-Based Routing
-A company with services in India and Europe uses Traffic Manager to:
+A company with services in India and Europe uses  Traffic Manager to:
 - Route Indian users to the India datacenter
 - Route European users to the EU datacenter
 - Switch traffic during outages using priority routing
 
 ---
-
 
 
 ## 🧭 Overview Comparison
@@ -165,5 +164,4 @@ DNS-based routing to endpoints based on rules.
 
 ---
 
-Would you like help designing a real-world architecture using one or more of these? I can sketch out a solution tailored to your app or business.
 
