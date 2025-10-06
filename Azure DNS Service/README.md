@@ -75,9 +75,6 @@ Use **Azure Private DNS** for internal name resolution:
 - Ideal for VMs, containers, and services within a VNet
 - Example: `internal.contoso.local → 10.0.0.4`
 
----
-
-Absolutely, Sai! Let’s break down the **Mail (MX)**, **Name Server (NS)**, and **Text (TXT)** DNS records in detail, with clear examples and real-world use cases so you can master how and when to use each.
 
 ---
 
