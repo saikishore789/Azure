@@ -49,3 +49,4 @@ Sources: [Microsoft Learn – Default Processes](https://learn.microsoft.com/en-
 - In Azure DevOps Server (on-prem), you modify **process templates** directly using XML files.
 
 ![alt text](image.png)
+![alt text](image-1.png)
