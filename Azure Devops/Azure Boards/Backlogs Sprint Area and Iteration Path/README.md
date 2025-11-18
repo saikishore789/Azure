@@ -93,5 +93,4 @@ Imagine you’re building a **Banking App**:
 - **Backlog**: “Add loan calculator”, “Fix login bug”, “Improve dashboard UI”  
 - **Area Path**: “Mobile Frontend” vs “Backend Services”  
 - **Iteration Path**: “Release 1 → Sprint 2” (Nov 2025)  
-- **Sprint**: The team commits to finishing “Fix login bug” and “Improve dashboard UI” in Sprint 2.  
-
+- **Sprint**: The team commits to finishing “Fix login bug” and “Improve dashboard UI” in Sprint 2.
