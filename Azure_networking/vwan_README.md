@@ -43,4 +43,12 @@ Azure Virtual WAN (vWAN) is a **networking service from Microsoft Azure** that p
 11. **VPN and ExpressRoute Connectivity**
     *   Link VPN and ExpressRoute for flexible connectivity options.
 
+###   ** Azure WAN Types **
+
+- Basic: Site to Site (S2S)-
+- Standard: S2S, P2S, ExpressRoute, VNet-to-VNet, Azure Firewall
+
+## **VWAN resources **
+
+Vwan, Hub, Virtual Network Connections, Hub-to-Hub Connection, Hub Route Table
 
